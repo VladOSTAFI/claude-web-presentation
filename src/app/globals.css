@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out both;
+}
