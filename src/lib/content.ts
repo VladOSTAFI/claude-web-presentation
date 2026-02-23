@@ -45,11 +45,8 @@ export const sections: Section[] = [
           {
             title: "Installation",
             language: "bash",
-            code: `# macOS / Linux (native installer, auto-updates)
-curl -fsSL https://claude.ai/install.sh | bash
-
-# Windows (PowerShell)
-irm https://claude.ai/install.ps1 | iex
+            code: `# Install via npm (all platforms)
+npm install -g @anthropic-ai/claude-code
 
 # Verify
 claude --version

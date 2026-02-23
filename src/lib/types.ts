@@ -34,3 +34,11 @@ export interface Section {
   shortTitle: string;
   slides: SlideContent[];
 }
+
+export interface AgentCatalogEntry {
+  id: string;
+  name: string;
+  summary: string;
+  icon: string;
+  agentFileContent: string;
+}
